@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CalculaFlex</string>
+    <string name="pre_o_da_gasolina">Preço da Gasolina</string>
+    <string name="km_l">KM/L Gasolina</string>
+    <string name="km_l_lcool">KM/L Álcool</string>
+    <string name="sugest_o_de_abastecimento">Sugestão de Abastecimento</string>
+    <string name="etanol">Etanol</string>
+    <string name="gasto_r_km">Gasto R$/Km</string>
+    <string name="_0_30">0.30</string>
+    <string name="gasolina">Gasolina</string>
+    <string name="alcool">Álcool</string>
+</resources>

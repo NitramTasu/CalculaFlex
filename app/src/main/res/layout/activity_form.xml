@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/banner"/>
+
+    <View style="@style/divider"/>
+
+    <TextView
+        style="@style/header_title"
+        android:text="Posto de Gasolina"
+        android:drawableStart="@drawable/fuel_icon"/>
+
+    <View style="@style/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/container_row">
+            <TextView
+                style="@style/header_subtitle"
+                android:text="@string/pre_o_da_gasolina"/>
+            <TextView
+                style="@style/header_subtitle"
+                android:text="@string/pre_o_da_gasolina" />
+        </LinearLayout>
+
+        <LinearLayout  style="@style/container_row">
+
+            <EditText
+                android:id="@+id/etGasPrice"
+                style="@style/input_number_decimal"
+                android:hint="Ex.:4.19" />
+
+            <EditText
+                android:id="@+id/etEthanolPrice"
+                style="@style/input_number_decimal"
+                android:hint="Ex.:2.49" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/divider"/>
+
+    <TextView
+        style="@style/header_title"
+        android:text="Consumo médio"
+        android:drawableStart="@drawable/car_icon"/>
+    <View
+        style="@style/divider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/container_row">
+            <TextView
+                style="@style/header_subtitle"
+                android:text="@string/km_l"/>
+            <TextView
+                style="@style/header_subtitle"
+                android:text="@string/km_l_lcool" />
+        </LinearLayout>
+
+        <LinearLayout  style="@style/container_row">
+
+            <EditText
+                android:id="@+id/etGasAverage"
+                style="@style/input_number_decimal"
+                android:hint="Ex.:4.19" />
+
+            <EditText
+                android:id="@+id/etEthanolAverage"
+                style="@style/input_number_decimal"
+                android:hint="Ex.:2.49" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular" />
+
+</LinearLayout>
