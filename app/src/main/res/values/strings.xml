@@ -7,6 +7,11 @@
     <string name="etanol">Etanol</string>
     <string name="gasto_r_km">Gasto R$/Km</string>
     <string name="_0_30">0.30</string>
-    <string name="gasolina">Gasolina</string>
+    <string name="gasolina">Gasoline</string>
     <string name="alcool">Álcool</string>
+    <string name="gas_price_key">GAS_PRICE</string>
+    <string name="ethanol_price_key">ETHANOL_PRICE</string>
+    <string name="gas_average_price_key">GAS_AVERAGE</string>
+    <string name="ethanol_average_price_key">ETHANOL_AVERAGE</string>
+    <string name="label_ration_label">Gasolina/Etanol: %1$s</string>
 </resources>

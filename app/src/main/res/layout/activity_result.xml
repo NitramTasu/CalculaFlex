@@ -3,97 +3,111 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FormActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".FormActivity">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/banner"/>
+        android:src="@drawable/banner" />
 
-    <View style="@style/divider"/>
+    <View style="@style/divider" />
 
     <TextView
         style="@style/header_title"
-        android:text="@string/sugest_o_de_abastecimento"
-        android:drawableStart="@drawable/analisis_icon"/>
+        android:drawableStart="@drawable/analisis_icon"
+        android:text="@string/sugest_o_de_abastecimento" />
 
-    <View style="@style/divider"/>
+    <View style="@style/divider" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:weightSum="1"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="1">
 
         <TextView
+            android:id="@+id/tvSuggestion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="@string/etanol"
             android:textSize="40dp"
-            android:textStyle="bold"
-            android:layout_gravity="center"/>
+            android:textStyle="bold" />
     </LinearLayout>
 
-    <View
-        style="@style/divider"/>
+    <TextView
+        android:id="@+id/tvFuelRatio"
+        style="@style/header_subtitle"
+        android:text="@string/label_ration_label"
+        android:textStyle="normal"
+        android:gravity="center"/>
+
+    <View style="@style/divider" />
 
     <TextView
         style="@style/header_title"
-        android:text="@string/gasto_r_km"
-        android:drawableStart="@drawable/coins_icon"/>
-    <View
-        style="@style/divider"/>
+        android:drawableStart="@drawable/coins_icon"
+        android:text="@string/gasto_r_km" />
+
+    <View style="@style/divider" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:weightSum="1"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="1">
 
         <TextView
+            android:id="@+id/tvGasAverageResult"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/_0_30"
-            android:textSize="30dp"
-            android:gravity="center"
+            android:layout_gravity="center"
             android:layout_weight="0.5"
-            android:layout_gravity="center"/>
+            android:gravity="center"
+            android:text="@string/_0_30"
+            android:textSize="30dp" />
+
         <TextView
+            android:id="@+id/tvEthanolAverageResult"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/_0_30"
-            android:textSize="30dp"
+            android:layout_gravity="center"
             android:layout_weight="0.5"
             android:gravity="center"
-            android:layout_gravity="center"/>
+            android:text="@string/_0_30"
+            android:textSize="30dp" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:weightSum="1"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="1">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/gasolina"
-            android:textSize="12dp"
-            android:gravity="center"
+            android:layout_gravity="center"
             android:layout_weight="0.5"
-            android:layout_gravity="center"/>
+            android:gravity="center"
+            android:text="@string/gasolina"
+            android:textSize="12dp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/alcool"
-            android:textSize="12dp"
+            android:layout_gravity="center"
             android:layout_weight="0.5"
             android:gravity="center"
-            android:layout_gravity="center"/>
+            android:text="@string/alcool"
+            android:textSize="12dp" />
 
     </LinearLayout>
 
